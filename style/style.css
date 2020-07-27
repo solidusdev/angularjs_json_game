@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#outer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-image: url("../images/background/background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: sans-serif;
+}
+
+#outer-container #inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#outer-container #inner-container #player-container {
+  text-align: center;
+  color: white;
+}
+
+#outer-container #inner-container #player-container #title {
+  font-size: 5.9rem;
+  padding-bottom: 1.5rem;
+  font-style: italic;
+}
+
+#outer-container #inner-container #player-container #subtitle {
+  font-size: 1.5rem;
+  margin-top: -1rem;
+}
+
+#outer-container #inner-container #player-container #subtitle .orange {
+  color: #ff5e00;
+  font-style: oblique;
+}
+
+#outer-container #inner-container #player-container button {
+  margin-top: 1.5rem;
+  padding: 0.4rem 3rem;
+  border: none;
+  color: white;
+  background-image: url("../images/background/basketball.jpeg");
+  border-radius: 23px;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+#outer-container #inner-container #player-container .row {
+  margin-top: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+#outer-container #inner-container #player-container .row .column {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 50%;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+#outer-container #inner-container #player-container .row .column .info-container {
+  overflow: hidden;
+  padding: 10px;
+}
+
+#outer-container #inner-container #player-container .row .column .info-container h1 {
+  width: 100%;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+#outer-container #inner-container #player-container .row .column .info-container img {
+  max-width: 110px;
+  margin-top: 1.5rem;
+}
+
+#outer-container #inner-container #player-container .row .column .info-container .fppg_value {
+  margin-top: 1rem;
+  opacity: 0;
+}
+
+#outer-container #inner-container #player-container #score-container {
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#outer-container #inner-container #player-container #score-container h1 {
+  font-size: 2rem;
+  padding-bottom: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: 100;
+}
+/*# sourceMappingURL=style.css.map */

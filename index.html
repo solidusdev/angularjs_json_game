@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>AngularJS Game</title>
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+    <body>
+        <div ng-app="app" ng-controller="json_controller">
+            <div id="outer-container">
+                <div id="inner-container">
+                    <div id="player-container">
+                        <h2 id="title">Swoosh!</h2>
+                        <p id="subtitle">Can you guess the <span class="orange">better</span> player?</p>
+                        <div class="row">
+                            <div class="column">
+                                <div class="info-container" ng-click="chosen_player_1()">
+                                    <h1 ng-bind="player_1_name"></h1>
+                                    <img src={{player_1_src}} alt="player 1" />
+                                    <p class="fppg_value"> FPPG: <br /> <span ng-bind="player_1_fppg"></span></p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="info-container" ng-click="chosen_player_2()">
+                                    <h1 ng-bind="player_2_name"></h1>
+                                    <img src={{player_2_src}} alt="player 2" />
+                                    <p class="fppg_value"> FPPG: <br /> <span ng-bind="player_2_fppg"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="score-container">
+                            <h1>Goal: 10</h1>
+                            <h1>Your Score: <span id="score" ng-bind="score"></span></h1>
+                        </div>
+                        <button id="btn" ng-click="re_init()">Try Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./angularjs/modules/app.js"></script>
+        <script src="./angularjs/controllers/json_controller.js"></script>
+    </body>
+</html>
